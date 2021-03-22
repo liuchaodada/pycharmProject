@@ -251,6 +251,8 @@ https://learngitbranching.js.org/
 * [b站视频参考](https://www.bilibili.com/video/BV1FE411P7B3)
 * [知乎视频参考](https://www.zhihu.com/zvideo/1237429674772299776)
 
+**push**
+![gif](https://sc03.alicdn.com/kf/Uc3d61b204a24411f996e57246c410129c.jpg)
 
 **预告**
 
