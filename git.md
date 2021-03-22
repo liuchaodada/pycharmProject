@@ -193,7 +193,8 @@ $ git push pyP_github main:main
 
 
 ```
-如果本地分支名与远程分支名相同，则main:main可以简写main
+如果本地分支名与远程分支名相同，则main:main可以简写成main
+
 如果绑定的远程仓库是默认仓库可以直接写 git push
 
 ![git push](https://ae02.alicdn.com/kf/Udc450f41b6d1459fa31df0cd38419959V.jpg)
@@ -202,5 +203,16 @@ $ git push pyP_github main:main
 ## git插件（pycharm）
 
 尽管git bash命令行能满足我们的简单需求，但是大型项目我们需要更便利快速和可视化的git工具
+
 pycharm的git插件
+
+file -> setting ->plugin 搜索git
+
+安装gitToolBox
+
+![gittoolbox](
+https://ae04.alicdn.com/kf/Ue1bd67da5df94bf5b3c5b102a28ca093z.jpg)
+
+
+vscode的git插件
 
