@@ -55,7 +55,7 @@ git客户端不仅做本地的文件快照，还会将本地resposity完整地�
 * 将需要进行版本管理的文件放入暂存区域；
 * 将暂存区域的文件提交到git仓库。
 
-![git工作流程](https://mmbiz.qpic.cn/mmbiz_png/uJDAUKrGC7Ksu8UlITwMlbX3kMGtZ9p09iaOhl0dACfLrMwNbDzucGQ30s3HnsiaczfcR6dC9OehicuwibKuHjRlzg/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+![git工作流程](https://ftp.bmp.ovh/imgs/2021/03/df7e472a4f347bf4.png)
 
 ## git文件的四种状态
 * Untracked: 未跟踪, 此文件在文件夹中, 但并没有加入到git库, 不参与版本控制. 通过git add 状态变为Staged.
@@ -73,10 +73,67 @@ git客户端不仅做本地的文件快照，还会将本地resposity完整地�
 
 
 ## 搭建git，关联github和gitee
-**（工作中实际都会搭建私钥gitlab，但远程仓库的原理是一样的，都是ssh实现）**
-### 1. 
+
+**工作中实际都会搭建私钥gitlab，但远程仓库的原理是一样的，都是ssh实现**
+
+**注意下示例代码git命令里带<>标红的都是需要填入自己的对应参数**
 
 ![理解git仓库](https://www.runoob.com/wp-content/uploads/2015/02/git-command.jpg)
 
+**1. 搭建本地仓库或克隆远程仓库**
+```shell
+$ git init 
+or 
+$ git clone <git@github.com:liuchaodada/pycharmProject.git>
+$ git clone <git@gitee.com:liuchaodada/pycharmProject.git>
+```
+
+**2. 配置git，设置用户名和邮箱**
+```shell
+$ git config --global user.name "<username>"
+$ git config --global user.email "<useremail>"
+```
+用户名可以写自己的名字或者github gitee的注册名
+邮箱必须写github或gitee绑定的注册邮箱，每次commit会提交这两个信息
+
+**3. 生成ssh密钥，测试ssh连接**
+```shell
+$ ssh-keygen -t rsa -C "<youremail@example.com>" -f  <rsa_github>
+$ ssh-keygen -t rsa -C "<youremail@example.com>" -f <rsa_gitee>
+```
+后面的 your_email@youremail.com 改为你在 Github 或gitee上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在 ~/ 下生成 .ssh 文件夹，进去，打开 id_rsa.pub，复制里面的 key。-f 是指定密钥name，这里我建了两个密钥一个是github的一个是gitee的。
+
+**4.添加ssh公钥到github gitee**
+
+这部分不赘述，在gitee和github个人主页设置里有，我们生成的密钥在
+/root/.ssh文件里，有两个，id_rsa_github.pub和id_rsa_gitee.pub,直接进入目录cat，复制密钥内容，到github和gitee网站内新建ssh公钥，名称自建不限制。
+
+**5.新建远程仓库**
+
+这部分不赘述，注意的是从2020年4月开始，github把master主分支重新命名为了main主分支，所以默认的新建仓库主分支为main。另外新建远程仓库最好与本地仓库的名称保持一致。
+
+**6.绑定远程仓库**
+```shell
+
+$ git remote add 
+<remotename> git@github:<username>/<repositoryname>.git
+
+or
+$ git remote add
+<remotename> git@gitee:<username>/<repositoryname>.git
+
+```
+这里面remotename可以是远程仓库项目名称也可以自己起利于分辨的别名，username是你github或gitee的用户名地址，repositoryname是远程仓库项目名称
+
+可以通过git remote -vv查看所有仓库和关联情况,这是我关联完github和gitee知后的remote情况
+```shell
+$ git remote -vv
+```
+![git remote -vv](https://ftp.bmp.ovh/imgs/2021/03/b0cce682ee611849.png)
+
+**7. git push一定不会报错的git命令写法**
+```shell
+$ git push <远程主机名> <本地分支名>:<远程分支名>
+```
 
 
