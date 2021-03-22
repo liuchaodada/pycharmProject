@@ -54,5 +54,6 @@
 #### 2、使用yaml 来管理猫猫，狗狗的属性
 
 #### [作业地址](https://gitee.com/liuchaodada/pycharmProject/tree/main/animal)
-#### 运行效果![2021-03-23_02-51-54.gif](https://ae03.alicdn.com/kf/U31e8f0370d1e4514b6a845c2b88a6395D.jpg)
-![屏幕截图 2021-03-23 031452.png](https://ae02.alicdn.com/kf/U1cabb6ab94c24d848c0776f97a81783aX.jpg)
+#### 运行效果
+![屏幕截图 2021-03-23 032147.png](https://ae04.alicdn.com/kf/U9e3b7718b651488fb8d63fe2e05cb538P.jpg)
+![屏幕截图 2021-03-23 032034.png](https://ae02.alicdn.com/kf/U2d8a202ccbdb4fb6bd20221acb741feeL.jpg)

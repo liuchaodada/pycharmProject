@@ -7,7 +7,7 @@ dog: &wangcai
 
 
 cat: &mimi
-  name: "黑色"
+  name: "咪咪"
   age: 2
   color: "黑色"
   gender: "公猫"
