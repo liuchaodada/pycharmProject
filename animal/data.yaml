@@ -1,0 +1,15 @@
+dog: &wangcai
+  name: "旺财"
+  age: 3
+  color: "白色"
+  gender: "母狗"
+  hair: "长毛"
+<<: *wangcai
+
+cat: &mimi
+  name: "黑色"
+  age: 2
+  color: "黑色"
+  gender: "公猫"
+  hair: "短毛"
+<<: *mimi
