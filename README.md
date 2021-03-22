@@ -7,8 +7,8 @@
 2. 定义发工资模块 send_money，用来增加收入计算
 3. 定义工资查询模块 select_money，用来展示工资数额
 4. 定义一个start.py ，启动文件展示最终存款金额
-#### [作业地址](https://github.com/liuchaodada/HogwartsFIS04_allmenmustdie123/tree/main/salary)
-#### ![运行效果](https://s4.ax1x.com/2021/03/19/6fMHDU.png)
+#### [作业地址](https://gitee.com/liuchaodada/pycharmProject/tree/main/salary)
+#### 运行效果![运行效果](https://s4.ax1x.com/2021/03/19/6fMHDU.png)
 
 
 ## Python 脚本编写实战（二）
@@ -53,5 +53,6 @@
 
 #### 2、使用yaml 来管理猫猫，狗狗的属性
 
-#### [作业地址]()
-#### ![运行效果]()
+#### [作业地址](https://gitee.com/liuchaodada/pycharmProject/tree/main/animal)
+#### 运行效果![2021-03-23_02-51-54.gif](https://ae03.alicdn.com/kf/U31e8f0370d1e4514b6a845c2b88a6395D.jpg)
+![屏幕截图 2021-03-23 031452.png](https://ae02.alicdn.com/kf/U1cabb6ab94c24d848c0776f97a81783aX.jpg)
