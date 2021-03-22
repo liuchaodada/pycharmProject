@@ -200,11 +200,13 @@ $ git push pyP_github main:main
 ![git push](https://ae02.alicdn.com/kf/Udc450f41b6d1459fa31df0cd38419959V.jpg)
 
 
-## git插件（pycharm）
+## git插件（pycharm和vsocde）
 
 尽管git bash命令行能满足我们的简单需求，但是大型项目我们需要更便利快速和可视化的git工具
 
 pycharm的git插件
+
+[点击参考](https://blog.csdn.net/zeroooorez/article/details/94715752)
 
 file -> setting ->plugin 搜索git
 
@@ -213,6 +215,43 @@ file -> setting ->plugin 搜索git
 ![gittoolbox](
 https://ae04.alicdn.com/kf/Ue1bd67da5df94bf5b3c5b102a28ca093z.jpg)
 
+pycharm的git插件对新手和个人python开发者来说更直观和可视化，文件变更和branch，remote都很直观，commit和push的时候会自动提示相关信息，新手推荐
+
+![pygit1](https://ae04.alicdn.com/kf/Uec2b82c8e3d04b6ba3c067325980c048y.jpg)
+![pygit2](https://ae03.alicdn.com/kf/U8a959db615804daa95ca280abccde405Y.jpg)
 
 vscode的git插件
 
+[点击参考](https://zhuanlan.zhihu.com/p/183200664)
+
+ctrl+shift+x 搜索 git-extension-pack
+
+安装git-extension-pack
+
+因为gitlens和githistory的使用，vscode内登录github可以看到branch和remote的情况，以及file history修改的情况，所以大型项目的git可视化，更推荐vscode的插件。
+
+![gitpack](https://sc04.alicdn.com/kf/U7597b61ad9a74087b48dd3d6409b65d9i.jpg)
+
+## git bash 与在线练习git命令 ##
+
+对于我们来说windows有git gui小乌龟，对新手也是一种不错的选择，这边不赘述了
+git bash不推荐，我们可以用pycharm或vscode内置的terminal来进入git bash
+但是首先记住要先cd进入有.git的workspace内，git才被会识别出来。
+
+这里有一个有意思的在线练习git的小网站，推荐一下
+
+https://learngitbranching.js.org/
+
+
+**参考**
+
+* [菜鸟教程](https://www.runoob.com/git/git-tutorial.html)
+* [易百教程](https://www.yiibai.com/git)
+* [狂神聊Git](https://mp.weixin.qq.com/s/Bf7uVhGiu47uOELjmC5uXQ)
+* [b站视频参考](https://www.bilibili.com/video/BV1FE411P7B3)
+* [知乎视频参考](https://www.zhihu.com/zvideo/1237429674772299776)
+
+
+**预告**
+
+**下一篇 git进阶 git branch 和 git flow 以及git的实际工作流程**
