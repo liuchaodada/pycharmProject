@@ -76,32 +76,46 @@ git客户端不仅做本地的文件快照，还会将本地resposity完整地�
 
 **工作中实际都会搭建私钥gitlab，但远程仓库的原理是一样的，都是ssh实现**
 
-**注意下示例代码git命令里带<>标红的都是需要填入自己的对应参数**
+**注意下示例代码git命令里带<>的都是需要填入自己的对应参数**
 
 ![理解git仓库](https://www.runoob.com/wp-content/uploads/2015/02/git-command.jpg)
 
 **1. 搭建本地仓库或克隆远程仓库**
+
 ```shell
+
 $ git init 
+
 or 
+
 $ git clone <git@github.com:liuchaodada/pycharmProject.git>
 $ git clone <git@gitee.com:liuchaodada/pycharmProject.git>
+
 ```
 
 **2. 配置git，设置用户名和邮箱**
+
 ```shell
+
 $ git config --global user.name "<username>"
 $ git config --global user.email "<useremail>"
+
 ```
+
 用户名可以写自己的名字或者github gitee的注册名
 邮箱必须写github或gitee绑定的注册邮箱，每次commit会提交这两个信息
 
 **3. 生成ssh密钥，测试ssh连接**
+
 ```shell
+
 $ ssh-keygen -t rsa -C "<youremail@example.com>" -f  <rsa_github>
+
 $ ssh-keygen -t rsa -C "<youremail@example.com>" -f <rsa_gitee>
+
 ```
-后面的 your_email@youremail.com 改为你在 Github 或gitee上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。成功的话会在 ~/ 下生成 .ssh 文件夹，进去，打开 id_rsa.pub，复制里面的 key。-f 是指定密钥name，这里我建了两个密钥一个是github的一个是gitee的。
+
+后面的 your_email@youremail.com 改为你在 Github 或gitee上注册的邮箱，之后会要求确认路径和输入密码建议不设置passphrase密码直接enter跳过，我们这使用默认的一路回车就行。成功的话会在 ~/ 下生成 .ssh 文件夹，进去，打开 id_rsa.pub，复制里面的 key。-f 是指定密钥name，这里我建了两个密钥一个是github的一个是gitee的。
 
 **4.添加ssh公钥到github gitee**
 
@@ -113,27 +127,81 @@ $ ssh-keygen -t rsa -C "<youremail@example.com>" -f <rsa_gitee>
 这部分不赘述，注意的是从2020年4月开始，github把master主分支重新命名为了main主分支，所以默认的新建仓库主分支为main。另外新建远程仓库最好与本地仓库的名称保持一致。
 
 **6.绑定远程仓库**
+
 ```shell
 
 $ git remote add 
 <remotename> git@github:<username>/<repositoryname>.git
 
 or
+
 $ git remote add
 <remotename> git@gitee:<username>/<repositoryname>.git
 
 ```
+
 这里面remotename可以是远程仓库项目名称也可以自己起利于分辨的别名，username是你github或gitee的用户名地址，repositoryname是远程仓库项目名称
 
 可以通过git remote -vv查看所有仓库和关联情况,这是我关联完github和gitee知后的remote情况
+
 ```shell
+
 $ git remote -vv
+
 ```
+
 ![git remote -vv](https://ftp.bmp.ovh/imgs/2021/03/b0cce682ee611849.png)
 
 **7. git push一定不会报错的git命令写法**
+
+查看所在分支和远程分支关联
+
 ```shell
-$ git push <远程主机名> <本地分支名>:<远程分支名>
+
+$ git branch
+$ git branch -a
+
 ```
+
+![git branch](https://ftp.bmp.ovh/imgs/2021/03/e3fc17c3c40f615f.png)
+![git branch -a](https://ftp.bmp.ovh/imgs/2021/03/749cf1179d0fe4d1.png)
+
+查看远程仓库关联
+
+```shell
+
+$ git remote -vv
+
+```
+
+![git remote -vv](https://ftp.bmp.ovh/imgs/2021/03/7d4b25e396e8eea8.png)
+
+git push执行
+
+```shell
+
+$ git push <远程主机名> <本地分支名>:<远程分支名>
+
+```
+
+例：
+
+```shell
+
+$ git push pyP_gitee main:main
+$ git push pyP_github main:main
+
+
+```
+
+如果我们要将本地的master主分支push到github gitee的主分支main上的话，先切换到master分支再执行push。
+
+```shell
+
+$ git checkout master
+$ git push pyP_gitee master:main
+
+```
+
 
 
