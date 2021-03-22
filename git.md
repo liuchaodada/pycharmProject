@@ -1,4 +1,4 @@
-# 【GIT】 理解git工作流程、git插件与命令行、可视化练习、实际工作流程
+# 【GIT】 理解git、git工作流程、git插件与命令行、可视化练习
 
 ## [git是什么](https://www.runoob.com/git/git-tutorial.html)
 
@@ -152,7 +152,7 @@ $ git remote -vv
 
 ![git remote -vv](https://ftp.bmp.ovh/imgs/2021/03/b0cce682ee611849.png)
 
-**7. git push一定不会报错的git命令写法**
+**7. git push**
 
 查看所在分支和远程分支关联
 
@@ -193,15 +193,14 @@ $ git push pyP_github main:main
 
 
 ```
+如果本地分支名与远程分支名相同，则main:main可以简写main
+如果绑定的远程仓库是默认仓库可以直接写 git push
 
-如果我们要将本地的master主分支push到github gitee的主分支main上的话，先切换到master分支再执行push。
-
-```shell
-
-$ git checkout master
-$ git push pyP_gitee master:main
-
-```
+![git push](https://ae02.alicdn.com/kf/Udc450f41b6d1459fa31df0cd38419959V.jpg)
 
 
+## git插件（pycharm）
+
+尽管git bash命令行能满足我们的简单需求，但是大型项目我们需要更便利快速和可视化的git工具
+pycharm的git插件
 
