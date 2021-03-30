@@ -4,7 +4,7 @@ from Animal import Cat, Dog,main_cat,main_dog
 
 if __name__ == '__main__':
 
-    with open(r'./data.yaml') as f:
+    with open(r'./data_animal.yml') as f:
         data = yaml.safe_load(f)
         mimi = Cat(**data['cat'])
         main_cat(mimi)

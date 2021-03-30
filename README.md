@@ -56,4 +56,19 @@
 #### [作业地址](https://gitee.com/liuchaodada/pycharmProject/tree/main/animal)
 #### 运行效果
 ![屏幕截图 2021-03-23 032147.png](https://ae04.alicdn.com/kf/U9e3b7718b651488fb8d63fe2e05cb538P.jpg)
-![屏幕截图 2021-03-23 032034.png](https://ae02.alicdn.com/kf/U2d8a202ccbdb4fb6bd20221acb741feeL.jpg)
+![屏幕截图 2021-03-23 032034.png](https://ae04.alicdn.com/kf/U9e3b7718b651488fb8d63fe2e05cb538P.jpg)
+
+## Python 脚本编写实战（三）
+### 作业
+
+1. 补全计算器（加法，除法）的测试用例
+2. 使用数据驱动完成测试用例的自动生成
+3. 在调用测试方法之前打印【开始计算】，在调用测试方法之后打印【计算结束】
+
+**坑1: 除数为0的情况**
+
+**坑2: 自己发现**
+
+#### 作业地址
+#### 运行效果
+

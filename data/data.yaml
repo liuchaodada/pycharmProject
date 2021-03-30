@@ -1,6 +1,0 @@
-server0: &server0
-  - 127.0.0.1
-  - 8050
-
-default:
-  - *server0

@@ -4,7 +4,7 @@ dog: &wangcai
   color: "白色"
   gender: "母狗"
   hair: "长毛"
-
+.
 
 cat: &mimi
   name: "咪咪"
