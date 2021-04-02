@@ -1,5 +1,5 @@
 
-#  **(必须先升级Windows 10)**
+#  【WSL2】告别 VM ware 和 Virtual Box 拥抱WSL2 和 Docker **(必须先升级Windows 10)**
 
 ## **wsl2安装**
 
@@ -159,3 +159,13 @@ code .
 ```powershell
 code .
 ```
+
+## **参考**
+
+主要参考了微软的官方文档和docker的docker-desktop文档
+
+[wsl官方文档](https://docs.microsoft.com/zh-cn/windows/wsl/about)
+
+[windows terminal官方文档](https://docs.microsoft.com/zh-cn/windows/terminal/get-started)
+
+[docker-desktop官方文档](https://docs.docker.com/desktop/)
