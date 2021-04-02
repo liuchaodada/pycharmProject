@@ -89,6 +89,12 @@ wsl --set-default-version 2
 
 ## **安装docker-desktop 启用基于 wsl2 的docker服务**
 
+### 以管理员身份打开 PowerShell 并运行,先启用Hyper-V服务:
+
+```powershell
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+```
+
 因为wsl系统是Hyper-V虚拟内核，实现方式并非和真正的linux主机一样，所以没有systemd系统命令。
 
 而我们这样也可以通过bat命令来启动和关闭 wsl2 服务。
@@ -100,7 +106,7 @@ net start LxssManager
 
 而WLS2下通过apt install docker-ce命令安装的docker会只能无法启动用get-docker.sh安装docker，而且dockerd进程是用ubuntu传统的init方式而非systemd启动的，所以我不建议再在wsl2里面安装原生docker。
 
-尽管实际工作中我们一般会在远程linux主机里安装docker服务，但对于统一运行风格，方便本地调试来说，wsl2内核的docker-desktop要比docker-windows等更方便、更有linux味、结合desktop也更加可视化。
+尽管实际工作中我们一般会在远程linux主机里安装docker服务，但对于统一运行风格，方便本地调试来说，wsl2内核的docker-desktop要比docker-windows、docker-toolbox等win平台docker工具更方便、更有linux味、结合desktop的图形化界面也更加可视化。
 
 ### 步骤 1 - 下载
 
