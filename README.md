@@ -69,6 +69,8 @@
 
 **坑2: 自己发现**
 
-#### 作业地址
+#### [作业地址](https://gitee.com/liuchaodada/pycharmProject/tree/main/pytest_practice/calculator)
 #### 运行效果
+![](https://ftp.bmp.ovh/imgs/2021/04/185892637434a42d.png)
+
 
