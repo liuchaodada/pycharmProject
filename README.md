@@ -58,7 +58,7 @@
 ![屏幕截图 2021-03-23 032147.png](https://ae04.alicdn.com/kf/U9e3b7718b651488fb8d63fe2e05cb538P.jpg)
 ![屏幕截图 2021-03-23 032034.png](https://ae04.alicdn.com/kf/U9e3b7718b651488fb8d63fe2e05cb538P.jpg)
 
-## Python 脚本编写实战（三）
+## Pytest测试框架实战（三）
 ### 作业
 
 1. 补全计算器（加法，除法）的测试用例

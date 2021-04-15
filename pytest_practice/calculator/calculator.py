@@ -19,13 +19,3 @@ class Calculator:
         while b != 0:
             return a / b
         raise ValueError("被除数不得为0")
-
-        # try:
-        #     a / b
-        # except ZeroDivisionError as e:
-        #     print(f"error:{e} 被除数不得为0")
-        # # except Exception as e:
-        # #     traceback.print_exc()
-        # else:
-        #     return a / b
-
