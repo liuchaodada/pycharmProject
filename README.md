@@ -1,5 +1,6 @@
 # 【Python自动化训练营4期】
-## Python 脚本编写实战（一）
+## （一）python脚本编写实战 
+## 动态导入模块与基本函数编程
 ### 课后作业
 原有存款 1000元， 发工资之后存款变为2000元
 ### 定义模块
@@ -11,7 +12,8 @@
 #### 运行效果![运行效果](https://s4.ax1x.com/2021/03/19/6fMHDU.png)
 
 
-## Python 脚本编写实战（二）
+## （二）python脚本编写实战 
+## 面对对象与函数式编程
 ### 课后作业
 #### 1、自己写一个面向对象的例子：
 
@@ -58,7 +60,8 @@
 ![屏幕截图 2021-03-23 032147.png](https://ae04.alicdn.com/kf/U9e3b7718b651488fb8d63fe2e05cb538P.jpg)
 ![屏幕截图 2021-03-23 032034.png](https://ae04.alicdn.com/kf/U9e3b7718b651488fb8d63fe2e05cb538P.jpg)
 
-## Pytest测试框架实战（三）
+## （三）pytest测试框架实战 
+## parameterize结合yaml参数化
 ### 作业
 
 1. 补全计算器（加法，除法）的测试用例
@@ -73,4 +76,12 @@
 #### 运行效果
 ![](https://ftp.bmp.ovh/imgs/2021/04/185892637434a42d.png)
 
+## （五）selenium实战 企业微信
+## 复用浏览器跳过QR码免登录
+### 作业
 
+课后作业：使用序列化的方法用cookie登录企业微信
+
+#### [作业地址](https://gitee.com/liuchaodada/pycharmProject/blob/main/selenium_practice/wechatwork_getcookies_login)
+#### 运行效果
+![](https://ftp.bmp.ovh/imgs/2021/04/37819024afcea507.png)
