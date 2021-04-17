@@ -4,6 +4,7 @@ __pycache__/
 *$py.class
 *.gif
 *.cast
+*.pytest_cache
 # C extensions
 *.so
 
