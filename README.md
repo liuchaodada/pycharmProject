@@ -76,6 +76,22 @@
 #### 运行效果
 ![](https://ftp.bmp.ovh/imgs/2021/04/185892637434a42d.png)
 
+
+## （四）pytest+allure+jenkins测试框架实战 
+## pytest fixture和 allure实战
+### 作业
+
+课后作业
+1、上节课的作业，使用fixture 实现setup/teardown 功能，
+2、实现 参数化的功能
+3、生成测试 报告
+
+#### [作业地址](https://gitee.com/liuchaodada/pycharmProject/tree/main/pytest_practice/allure_demo)
+#### 运行效果
+![](https://ftp.bmp.ovh/imgs/2021/04/542635539887bc4b.png)
+![](https://ftp.bmp.ovh/imgs/2021/04/67dd4c42a1eff81b.png)
+![](https://ftp.bmp.ovh/imgs/2021/04/2b9c7bbe049e40a4.png)
+
 ## （五）selenium实战 企业微信
 ## 复用浏览器跳过QR码免登录
 ### 作业

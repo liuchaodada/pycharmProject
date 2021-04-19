@@ -1,0 +1,63 @@
+add_int:
+  datas:
+    - [1,2,3]
+    - [-1,-2,-3]
+    - [20000,30000,50000]
+  ids:
+    - "add_int1"
+    - "add_int2"
+    - "add_int3"
+
+add_float:
+  datas:
+    - [0.1,0.2,0.3]
+    - [-0.1,-0.2,-0.3]
+  ids:
+    - "add_float1"
+    - "add_float2"
+
+sub_int:
+  datas:
+    - [4,1,3]
+    - [-1,-2,1]
+    - [5000,3000,2000]
+  ids:
+    - "sub_int1"
+    - "sub_int2"
+    - "sub_int3"
+
+sub_float:
+  datas:
+    - [0.3,0.1,0.2]
+    - [-0.1,-0.2,0.1]
+  ids:
+    - "sub_float1"
+    - "sub_float2"
+
+mul_int:
+  datas:
+    - [2,3,6]
+    - [-20,300,-6000]
+  ids:
+    - "mul_int1"
+    - "mul_int2"
+
+mul_float:
+  datas:
+    - [0.2,0.3,0.06]
+    - [-0.3,-0.2,0.06]
+  ids:
+    - "mul_float1"
+    - "mul_float2"
+
+div_data:
+  datas:
+    - [1,0,1]
+    - [8,2,4]
+    - [-6,-3,2]
+    - [10,2,3]
+  ids:
+    - "div1"
+    - "div2"
+    - "div3"
+    - "div4"
